@@ -13,7 +13,7 @@ const oneAway = (str1, str2) => {
             return false;
           } else {
             mulligan = true;
-            sP++; 
+            sp++; 
           }
         } else {
           fp++;

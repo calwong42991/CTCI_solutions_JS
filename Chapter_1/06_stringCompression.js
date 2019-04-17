@@ -6,7 +6,7 @@ const strCompression = (string) => {
 
   for(let i = 0; i < string.length; i++){
     if(currChar !== string[i]){
-      compressed = `${compressed} + ${currChar} + ${currCount}`;
+      compressed = `${compressed}${currChar}${currCount}`;
       maxCount = Math.max(maxCount , currCount);
       currChar = string[i];
       currCount = 1;
