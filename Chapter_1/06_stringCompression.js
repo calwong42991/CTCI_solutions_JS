@@ -16,6 +16,7 @@ const strCompression = (string) => {
   }
   compressed = `${compressed} + ${currChar} + ${currCount}`;
   maxCount = Math.max(maxCount , currCount);
+  
+  return maxCount === 1 ? string : compressed;
 }
-return maxCount === 1 ? string : compressed;
 
