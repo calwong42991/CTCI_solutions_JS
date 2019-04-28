@@ -10,7 +10,7 @@ const rotateMatrix = (matrix) => {
     let toCol = col;
     let toPixel = matrix[row][col];
 
-    for(let i = 0; i < 4; i++){
+    for (let i = 0; i < 4; i++) {
       fromRow = toRow;
       fromCol = toCol;
       toRow = fromCol;
@@ -22,8 +22,8 @@ const rotateMatrix = (matrix) => {
     }
   }
 
-  for(let i = 0; i < matrix.length / 2; i++){
-    for(let j = i; j < edge - 1; j++){
+  for (let i = 0; i < matrix.length / 2; i++) {
+    for (let j = i; j < edge - 1; j++) {
       movePixels(i, j);
     }
   }
